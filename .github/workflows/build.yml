@@ -498,7 +498,7 @@ jobs:
           - 25
       fail-fast: false
     name: Test JDK ${{ matrix.java }}, ${{ matrix.os }}
-    steps:
+    steps: # jsoup
       - name: Checkout
         uses: actions/checkout@v5
       - name: Set up JDK ${{ matrix.java }}
